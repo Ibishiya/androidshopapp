@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     textInputLayoutUserName.setVisibility(View.VISIBLE);
                     textInputLayoutPassword.setVisibility(View.VISIBLE);
                     RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams)container.getLayoutParams();
-                    layoutParams.height = 900;
+                    layoutParams.height = 1100;
                     container.setLayoutParams(layoutParams);
                     container.startAnimation(slide_up);
                     flag = false;
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.btnLogin:
-                Toast.makeText(getApplicationContext(), "Login", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
