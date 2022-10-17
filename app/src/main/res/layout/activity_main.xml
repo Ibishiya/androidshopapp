@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/btnShowLogin"
-            android:layout_margin="16dp"
+            android:layout_margin="10sp"
             android:hint="@string/user_name">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/letters"
                 android:inputType="text"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark" />
 
@@ -68,8 +68,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/inputLayoutUserName"
-            android:layout_margin="16dp"
-            android:textSize="20dp"
+            android:layout_margin="10sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:hint="@string/pass">
 
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/letters"
                 android:inputType="textPassword"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -88,7 +88,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/inputLayoutPassword"
-            android:layout_margin="16dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
             android:text="@string/login"
             android:textColor="@color/white" />
     </RelativeLayout>
