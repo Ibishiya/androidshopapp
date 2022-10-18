@@ -1,4 +1,4 @@
 package com.ecommerce.shoopingapp;
 
-public class RegisterActivity {
+public class LoginActivity {
 }

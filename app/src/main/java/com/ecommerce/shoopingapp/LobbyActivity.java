@@ -1,2 +1,4 @@
-package com.ecommerce.shoopingapp;public class LobbyActivity {
+package com.ecommerce.shoopingapp;
+
+public class LobbyActivity {
 }
