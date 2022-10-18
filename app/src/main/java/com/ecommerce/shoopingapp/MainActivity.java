@@ -1,8 +1,7 @@
 package com.ecommerce.shoopingapp;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.ecommerce.shoopingapp.R.id.btn_login;
 
-import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -10,8 +9,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         container = findViewById(R.id.relative_container);
         videoBackground = findViewById(R.id.video_backgroud);
         btnShowLogin = findViewById(R.id.btnShowLogin);
-        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin = findViewById(btn_login);
         textInputLayoutUserName = findViewById(R.id.inputLayoutUserName);
         textInputLayoutPassword = findViewById(R.id.inputLayoutPassword);
         btnShowLogin.setOnClickListener(this);
@@ -76,10 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     flag = true;
                     init();
                 }
-                break;
-            case R.id.btnLogin:
-                startActivity(new Intent(MainActivity.this, LobbyActivity.class));;
-                break;
+
         }
     }
 }

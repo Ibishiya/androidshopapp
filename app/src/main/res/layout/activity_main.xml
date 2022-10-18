@@ -24,10 +24,21 @@
 
     <RelativeLayout
         android:id="@+id/relative_container"
-        android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/video_backgroud"
+        android:layout_alignBaseline="@id/video_backgroud"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/shape_background">
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_background"
+        android:layoutMode="clipBounds"
+        android:soundEffectsEnabled="true"
+        android:splitMotionEvents="false"
+        android:textAlignment="viewStart"
+        android:touchscreenBlocksFocus="true"
+        android:transitionGroup="false"
+        android:visibility="visible">
 
         <Button
             android:id="@+id/btnShowLogin"
@@ -39,10 +50,10 @@
             android:layout_marginTop="6dp"
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="6dp"
-            android:textSize="30dp"
             android:fontFamily="@font/letters"
-            android:text="@string/login"
-            android:textColor="@color/white" />
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputLayoutUserName"
@@ -57,9 +68,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/letters"
                 android:inputType="text"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textStyle="bold" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,61 +80,98 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/inputLayoutUserName"
             android:layout_margin="10sp"
+            android:hint="@string/pass"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:hint="@string/pass">
+            android:textStyle="bold">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/letters"
                 android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textStyle="bold" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/inputLayoutPassword"
-            android:layout_marginStart="10sp"
-            android:layout_marginTop="10sp"
-            android:layout_marginEnd="10sp"
-            android:layout_marginBottom="10sp"
-            android:text="@string/login"
-            android:textColor="@color/white" />
+            android:layout_alignRight="@id/btn_login"
+            android:layout_marginTop="115dp"
+            android:ems="10"
+            android:onClick="onClick"
+            android:text="Register"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputLayoutPassword"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="346dp"
+            android:ems="10"
+            android:text="Login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
     </RelativeLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignStart="@id/video_backgroud"
+        android:layout_alignTop="@id/tv_login"
+        android:layout_alignRight="@id/relative_container"
+        android:layout_marginStart="-37dp"
+        android:layout_marginTop="-42dp"
+        android:layout_marginRight="37dp"
+        android:layoutDirection="locale"
+        tools:ignore="ExtraText">
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="104dp"
+            android:layout_height="128dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.561"
+            app:layout_constraintHorizontal_bias="0.566"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.24"
+            app:layout_constraintVertical_bias="0.143"
             app:srcCompat="@drawable/background_logo" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/logosho" />
+            android:layout_width="102dp"
+            android:layout_height="121dp"
+            android:layoutDirection="inherit"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:barrierAllowsGoneWidgets="true"
+            app:srcCompat="@drawable/logosho"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="120dp" /><![CDATA[
 
+
+
+
+
+        android:layout_below="@+id/et_password"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"/>
+
+
+
+
+
+
+    ]]>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

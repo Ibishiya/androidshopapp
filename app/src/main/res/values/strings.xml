@@ -3,4 +3,6 @@
     <string name="login">Login</string>
     <string name="user_name">User Name</string>
     <string name="pass">Password</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
