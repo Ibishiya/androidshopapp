@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/size"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -11,21 +11,22 @@
         android:id="@+id/video_backgroud"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
     <TextView
         android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="16dp"
+        android:fontFamily="@font/humble"
         android:text="@string/app_name"
-        android:textSize="40sp"
         android:textColor="@color/colorPrimaryDark"
-        android:fontFamily="@font/humble"/>
+        android:textSize="40sp" />
 
     <RelativeLayout
         android:id="@+id/relative_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="396dp"
+        android:layout_height="456dp"
         android:layout_alignWithParentIfMissing="true"
         android:layout_above="@id/video_backgroud"
         android:layout_alignBaseline="@id/video_backgroud"
@@ -42,7 +43,7 @@
 
         <Button
             android:id="@+id/btnShowLogin"
-            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -51,9 +52,12 @@
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="6dp"
             android:fontFamily="@font/letters"
+            android:insetTop="0dp"
             android:text="Welcome"
             android:textColor="@color/white"
-            android:textSize="30dp" />
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:visibility="visible" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputLayoutUserName"
@@ -149,14 +153,21 @@
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="102dp"
-            android:layout_height="121dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
             android:layoutDirection="inherit"
             android:textAlignment="center"
             android:visibility="visible"
             app:barrierAllowsGoneWidgets="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
             app:srcCompat="@drawable/logosho"
-            tools:layout_editor_absoluteX="197dp"
-            tools:layout_editor_absoluteY="120dp" /><![CDATA[
+            tools:visibility="visible" /><![CDATA[
+
+
 
 
 
@@ -165,6 +176,7 @@
         android:layout_below="@+id/et_password"
         android:inputType="textPassword"
         android:hint="Confirm Password"/>
+
 
 
 
