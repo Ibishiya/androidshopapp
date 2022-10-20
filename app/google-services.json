@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499124726711",
+    "project_id": "shoopingapp-d35cb",
+    "storage_bucket": "shoopingapp-d35cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499124726711:android:28b060a8f5487346469632",
+        "android_client_info": {
+          "package_name": "com.ecommerce.shoopingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499124726711-lj251sv0n3op2e7dv2fvg1hjjv9s5phe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ0urvOcnz1XI5gC5-cj1l4KXZwk2mrnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499124726711-lj251sv0n3op2e7dv2fvg1hjjv9s5phe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
