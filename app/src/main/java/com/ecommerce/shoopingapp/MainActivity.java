@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         container = findViewById(R.id.relative_container);
         videoBackground = findViewById(R.id.video_backgroud);
-        btnShowLogin = findViewById(R.id.btnShowLogin);
+        btnShowLogin = findViewById(R.id.btnNewShowLogin);
         btnLogin = findViewById(btn_login);
-        textInputLayoutUserName = findViewById(R.id.inputLayoutUserName);
-        textInputLayoutPassword = findViewById(R.id.inputLayoutPassword);
+        textInputLayoutUserName = findViewById(R.id.inputLayoutNewUserName);
+        textInputLayoutPassword = findViewById(R.id.inputLayoutNewPassword);
         btnShowLogin.setOnClickListener(this);
         btnLogin.setOnClickListener(this);
         slide_up = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_up);
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.btnShowLogin:
+            case R.id.btnNewShowLogin:
                 if(flag == true){
                     textInputLayoutUserName.setVisibility(View.VISIBLE);
                     textInputLayoutPassword.setVisibility(View.VISIBLE);

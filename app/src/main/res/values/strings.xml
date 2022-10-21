@@ -5,4 +5,8 @@
     <string name="pass">Password</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_activity_registration">Registration</string>
+    <string name="new_user_name">New User Name</string>
+    <string name="new_pass">New password</string>
 </resources>

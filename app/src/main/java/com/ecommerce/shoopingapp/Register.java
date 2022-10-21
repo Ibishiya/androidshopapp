@@ -12,7 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class Login extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     Button btn_lregister, btn_llogin;
     EditText et_lusername, et_lpassword;
 
@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
 
         databaseHelper = new DatabaseHelper(this);
 
@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity {
         btn_lregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, MainActivity.class);
+                Intent intent = new Intent(Register.this, MainActivity.class);
                 startActivity(intent);
             }
         });

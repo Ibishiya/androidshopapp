@@ -53,7 +53,7 @@
             android:layout_marginBottom="6dp"
             android:fontFamily="@font/letters"
             android:insetTop="0dp"
-            android:text="Welcome"
+            android:text="Registration"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:visibility="visible"
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btnNewShowLogin"
             android:layout_margin="10sp"
-            android:hint="@string/user_name">
+            android:hint="@string/new_user_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -89,6 +89,7 @@
             android:textStyle="bold">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TextInputEditText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/letters"
@@ -103,26 +104,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/inputLayoutNewPassword"
-            android:layout_alignRight="@id/btn_login"
+            android:layout_alignRight="@id/inputLayoutNewPassword"
             android:layout_marginTop="115dp"
             android:ems="10"
             android:onClick="onClick"
             android:text="Register"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/inputLayoutNewPassword"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="false"
-            android:layout_alignParentBottom="false"
-            android:layout_marginBottom="346dp"
-            android:ems="10"
-            android:text="Login"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
 
     </RelativeLayout>
 
@@ -191,6 +180,6 @@
 
 
 
-   
+
 
 
