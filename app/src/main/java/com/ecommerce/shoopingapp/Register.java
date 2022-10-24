@@ -26,11 +26,11 @@ public class Register extends AppCompatActivity {
 
         databaseHelper = new DatabaseHelper(this);
 
-        et_lusername = (EditText)findViewById(R.id.et_lusername);
-        et_lpassword = (EditText)findViewById(R.id.et_lpassword);
+        et_lusername = (EditText)findViewById(R.id.inputLayoutNewUserName);
+        et_lpassword = (EditText)findViewById(R.id.inputLayoutNewPassword);
 
-        btn_llogin = (Button)findViewById(R.id.btn_llogin);
-        btn_lregister = (Button)findViewById(R.id.btn_lregister);
+        btn_llogin = (Button)findViewById(R.id.btn_login);
+        btn_lregister = (Button)findViewById(R.id.btn_newregister);
 
         btn_lregister.setOnClickListener(new View.OnClickListener() {
             @Override

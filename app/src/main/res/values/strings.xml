@@ -5,8 +5,15 @@
     <string name="pass">Password</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_main2">Main2Activity</string>
-
     <string name="title_activity_registration">Registration</string>
     <string name="new_user_name">New User Name</string>
     <string name="new_pass">New password</string>
+    <string name="txt_titulo">Programa Base Datos</string>
+    <string name="txt_codigo">Codigo de Producto</string>
+    <string name="txt_descripcion">Descripcion de Producto</string>
+    <string name="txt_precio">Precio de Producto</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="btn_modificar">Modificar</string>
+    <string name="btn_eliminar">Eliminar</string>
 </resources>
