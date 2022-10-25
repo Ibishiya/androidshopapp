@@ -2,6 +2,7 @@ package com.ecommerce.shoopingapp;
 
 import static com.ecommerce.shoopingapp.R.id.btn_login;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     textInputLayoutUserName.setVisibility(View.VISIBLE);
                     textInputLayoutPassword.setVisibility(View.VISIBLE);
                     RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams)container.getLayoutParams();
-                    layoutParams.height = 1300;
+                    layoutParams.height = 1200;
                     container.setLayoutParams(layoutParams);
                     container.startAnimation(slide_up);
                     flag = false;
@@ -77,6 +78,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     init();
                 }
 
+                break;
+            case R.id.btn_newregister:
+                startActivity(new Intent(MainActivity.this, Register.class));
+                break;
         }
+
     }
 }
